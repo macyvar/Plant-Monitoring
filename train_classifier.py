@@ -84,3 +84,7 @@ def train_model(data_folder):
     # file (model.pkl) for future use.
     print("Test accuracy:", clf.score(X_test, y_test))
     joblib.dump(clf, "model.pkl")
+
+if __name__ == "__main__":
+    print("🚀 Starting training...")  # Add this for debug
+    train_model("dataset")
